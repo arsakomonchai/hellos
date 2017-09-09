@@ -39,29 +39,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeO-xZ-eyd">
-                                <rect key="frame" x="164" y="214" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMK-qo-CZN">
+                                <rect key="frame" x="138" y="249" width="73" height="30"/>
+                                <state key="normal" title="ADD"/>
+                                <connections>
+                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s88-b3-7OU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZeO-xZ-eyd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0LM-Ah-ovi"/>
-                            <constraint firstItem="ZeO-xZ-eyd" firstAttribute="top" secondItem="ERX-y4-gRJ" secondAttribute="bottom" constant="47" id="2Pa-dE-Trn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZeO-xZ-eyd" secondAttribute="trailing" id="8eX-On-ibn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cMK-qo-CZN" secondAttribute="trailing" id="23T-sB-8UD"/>
                             <constraint firstItem="ERX-y4-gRJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9nS-K5-fBE"/>
+                            <constraint firstItem="cMK-qo-CZN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EEI-n4-925"/>
                             <constraint firstItem="rpC-qD-M0I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ExB-fD-Dda"/>
-                            <constraint firstItem="ZeO-xZ-eyd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MJn-O9-Id5"/>
                             <constraint firstItem="ERX-y4-gRJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QWK-WB-WZQ"/>
                             <constraint firstItem="rpC-qD-M0I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="RfR-ii-bHa"/>
+                            <constraint firstItem="cMK-qo-CZN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ios-MS-PxK"/>
+                            <constraint firstItem="cMK-qo-CZN" firstAttribute="top" secondItem="ERX-y4-gRJ" secondAttribute="bottom" constant="82" id="nl5-t8-ucf"/>
                             <constraint firstItem="ERX-y4-gRJ" firstAttribute="top" secondItem="rpC-qD-M0I" secondAttribute="bottom" constant="35.5" id="phR-bL-dIU"/>
+                            <constraint firstItem="cMK-qo-CZN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vsW-lW-evM"/>
                             <constraint firstItem="ERX-y4-gRJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yyv-wz-WsW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="rpC-qD-M0I" id="rF2-Nr-ghZ"/>
+                        <outlet property="nameTextField" destination="ERX-y4-gRJ" id="FXL-Nq-jmW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="-113.79310344827587"/>
+            <point key="canvasLocation" x="-743" y="-298"/>
         </scene>
     </scenes>
 </document>
